@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="pics/iconFin.ico" type="image/x-icon"/>
+    <title>予取羽球</title>
+    <link href="style.css" rel="stylesheet" />
+<head>
+    <div class="toFix" >
+        <div class="navbar-brand"> 
+            <img src="pics/analy.png" width="50" height="50">&emsp;
+            分析結果
+        </div>
+    </div>
+</head>
+<body>
+    <br/><br/>
+    <div class="section stay">             
+        <div class="section box-style2">
+            <img src="pics/pic2.jpg" width="100%" height="100%">
+        </div>
+    </div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+    <div class="sidebar_left">
+        <div class="verticalLine">
+           <div class="section">
+                <div class="stayInShape section">
+                    <div  class=" analy-box">
+                        <img src="pics/chart2.JPG" width="100%" height="100%">
+                    </div>
+            
+                    <div class="font2 textNoWrap">
+                        <br/>&emsp;
+                        <a>高遠球次數: <span class="fontRed">9</span></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <a>挑球次數: <span class="fontRed">14</span></a>
+                        <br/><br/>&emsp;
+                        <a>殺球次數: <span class="fontRed">8</span></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <a>平球次數: <span class="fontRed">8</span></a>
+                        <br/><br/>&emsp;
+                        <a>切球次數: <span class="fontRed">17</span></a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <a>撲球次數: <span class="fontRed">5</span></a>
+                        <br/><br/>&emsp;
+                        <a>網前小球次數: <span class="fontRed">4</span></a> 
+                    </div>
+                </div>
+           </div>      
+        </div>
+    </div>
+    
+    <div class="sidebar_right">
+        <div class="stayInShape">
+            <div class="section">
+                <div  class=" analy-box5">
+                    <img src="pics/trace.JPG" width="100%" height="100%"> 
+                </div>
+            </div>
+            
+                <div class="font2">
+                    <div class="section">
+                        <br/>&emsp;<a><br/><span class="fontBold">移動軌跡記錄圖</span></a>
+                    </div><br/>
+                            <a>運動總時長:<span class="fontRed"> 00:45:26</span></a>
+                            <br/><br/>&emsp;
+                            <a>移動平均速度:<span class="fontRed"> 1.5(m/sec)</span></a><br/><br/>
+                            <a>移動總距離:<span class="fontRed"> 4089(m)</span></a><br/><br/>
+                    <br/><br/>&emsp;
+                </div> 
+        </div>    
+    </div>
+    
+    
+    <br/><br/>
+    <div class="section footer"> 
+        <input type ="button" class="a section popuptest" onclick="javascript:location.href=''" value="儲存檔案"></input>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type ="button" class="a section" onclick="javascript:location.href='home.html'" value="回到主頁"></input>
+
+        <script>
+            var button = document.querySelector('.popuptest');
+            var showtxt = document.querySelector('.show');
+    
+            function popup2(e) {
+                //window.confirm('是否儲存檔案?');
+                if (confirm('是否儲存檔案?') == true) {
+                    var sign = window.prompt('為檔案取名為:'); 
+                    while(sign==''){
+                        sign = window.prompt('檔名不可為空白 請再次輸入:');
+                    }
+                    window.alert('已儲存!正在返回首頁...')
+                    javascript:location.href='home.html'
+                }else{
+                    javascript:location.href='analy.html'
+                }
+            };
+            button.addEventListener('click', popup2);
+        </script>
+    </div>       
+</body>
+</html>

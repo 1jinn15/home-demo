@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="pics/icon.png" type="image/x-icon"/>
+    <title>予取羽球</title>
+    <link href="style.css" rel="stylesheet" />
+
+<head>
+    <div class="toFix" >
+        <div class="navbar-brand"> 
+            <input type="image" src="pics/cam.png" width="70" height="63">
+            運動表現分析
+        </div>
+    </div>
+</head>
+
+<body class="font">
+    
+    </br>
+    <table style="border-style: solid;" class="table" border="1" >
+        <tr>
+        <td><a href="tag.html">#11/15</a></td>
+        <td><a href="tag.html">#12/25</a></td>
+        <td><a href="tag.html">#03/12</a></td>
+        <td><a href="tag.html">#05/27</a></td>
+        <td><a href="tag.html">#11/26</a></td>
+        </tr>
+    </table><br/>
+    <div class="section">             
+        <div class="section box-style" >
+                <div class="section">                    
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <input type="file" accept="video/*" />
+                    <video controls>
+                        <source type="video/mov">
+                    </video>
+                    <canvas></canvas>
+                    <br/>
+                    <img/>
+                </div>   
+        </div>
+    </div><br/>
+    <div class="section"> 
+        <input type ="button" class="a" onclick="javascript:location.href='analy.html'" value="開始分析"></input>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type ="button" class="a" onclick="javascript:location.href='history.html'" value="歷史紀錄"></input>
+        <p class="show"></p>
+        <script>
+            var button = document.querySelector('.popuptest');
+            var showtxt = document.querySelector('.show');
+    
+            function popup2(e) {
+                window.confirm('影片上傳格式不符 請重新上傳');
+                if (confirm('影片上傳格式不符 請重新上傳') == true) {
+                    javascript:location.href='home.html'
+                }else{
+                    javascript:location.href='analy.html'
+                }
+            };
+            button.addEventListener('click', popup2);
+        </script>
+    </div>
+    <script type="text/javascript" src="home.js"></script> 
+</body>
+</html>
